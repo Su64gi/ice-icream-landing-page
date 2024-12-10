@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    background-color: #f4e8dc;
+    height: 100vh;
+}
+.navbar_logo img {
+    max-height: 60px; /* Adjust the height as per your requirement */
+    width: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Ensure the image fits properly */
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+    max-width: 80rem;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 40px;
+}
+.navbar{
+    background-color: transparent;
+    top: 0;
+    
+    width: 100%;
+    padding-top: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-menu_wrapper{
+    display: flex;
+    
+    column-gap: 14px;
+    align-items: center;
+    padding-left: 800px;
+
+}
+.navbar-menu_small-device{
+    display: none;
+   
+}
+/* Navbar scrolled state */
+.navbar.scrolled {
+    background-color: #771111;  /* Change the background color to dark when scrolled */
+    color: #0e0d0d;  /* Adjust text color for contrast */
+}
+
+
+
+.navbar_menu {
+    display: flex;
+    column-gap: 92.14px;
+    align-items: center;
+    font-weight: 200;
+}
+.navbar_menu a{
+    text-transform: uppercase;
+    color: #8a8989;
+    transition: color 0.3s ease;
+}
+.navbar_menu a.active{
+    color: #8a8989;
+
+}
+/* Change color on hover */
+.navbar_menu a:hover {
+    color: darkred; /* Change to a desired color (e.g., orange-red) */
+}
+
+/* Change color on focus (when clicked or tabbed into) */
+.navbar_menu a:focus {
+    color: darkred; /* Matches the hover color */
+    outline: none; /* Removes default outline for focus */
+}
+.navbar_auth{
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    
+}
+
+/* Side Menu Styling */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Initially hidden */
+    width: 250px;
+    height: 100%;
+    background-color: #f4e8dc;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease;
+    z-index: 1000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.side-menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.side-menu a {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #8a8989;
+    text-decoration: none;
+    transition: color 0.5s ease-in-out;
+}
+
+.side-menu a:hover {
+    color: darkred;
+}
+
+#close-btn {
+    font-size: 24px;
+    color: brown;
+    cursor: pointer;
+    margin-left: auto;
+    
+}
+
+/* Show Side Menu */
+.side-menu.show {
+    left: 0; /* Slide in */
+}
+
+
+
+
+.sign-in:hover {
+    background-color: darkred; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly increase the button size on hover */
+}
+
+.sign-in{
+    background-color:brown;
+    border-radius: 20px;
+    padding: 5px 22px ;
+    color: white;
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s;
+    margin-left: 50px;
+    
+
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 75px;
+    min-height: calc(100% - 117px);
+
+}
+.snippets{
+    color: brown;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+.title{
+    font-size: 60px;
+    font-weight: 800;
+    width: 690px;
+    line-height: 80px;
+    margin-bottom: 15px;
+}
+.ice{
+    display: inline;
+    color: brown;
+
+
+}
+.description{
+    width: 690px;
+    color: #5b5b5b;
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.order-now{
+    background-color: brown;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 35px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s;
+    
+
+
+}
+
+.order-now:hover {
+    background-color: darkred; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly increase the button size on hover */
+}
+
+.social-media{
+    display: flex;
+   padding: 5px;
+    gap:25px;
+
+}
+.hero-image img{
+    width: 85%;
+    height: 80%;
+    padding-top: 20px;
+    padding-left: 90px;
+
+
+}
+/*cards*/
+
+  
+.card-container1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Space between cards */
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    
+}
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow intensity */
+}
+.card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 15px;
+    text-align: center; /* Center align the text inside the card */
+}
+
+.card-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #333;
+}
+.container h1{
+        color: brown;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 800;
+        width: 690px;
+        
+        margin-bottom: 15px;
+    
+    }
+
+
+
+.navbar.scrolled {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: inherit;
+  }
+
+
+@media screen and (max-width:1023px)
+{
+    .navbar{
+        padding-top: 20px;
+    }
+    .navbar-menu_wrapper{
+        font-size: 14px;
+        column-gap: 50px;
+    }
+    .navbar_menu{
+        column-gap: 45px;
+    }
+    
+    .hero{
+        min-height: calc(100% - 67px);
+    }
+    .hero-image img{
+        width: 257px;
+        height: 374px;
+
+    }
+    
+}
+
+    @media screen and (max-width:767px) {
+        .container{
+            padding: 0 25px;
+        }
+        .navbar-menu_wrapper{
+            display: none;
+        }
+        .navbar-menu_small-device{
+            display: block;
+        }
+
+        .hero{
+            flex-direction: column;
+            align-items: unset;
+        }
+        .title,
+        .description{
+            width: 100%;
+        }
+        .description,
+        .order-now{
+            margin-bottom: 20px;
+        }
+        .social-media{
+            width: 141.58px;
+            height: 20px;
+        }
+        .hero-image{
+            text-align: center;
+        }
+        .side-menu {
+            position: fixed;
+            top: 0;
+            right: -100%; /* Hide the side menu by default */
+            width: 250px;
+            height: 100%;
+            background: #fff;
+            transition: 0.3s;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 2000;
+        }
+    
+        .side-menu.show {
+            right: 0; /* Show the menu when active */}
+        
+    }
+@media screen and (max-width:424px){
+    .title{
+        font-size: 40px;
+        line-height: 45px;
+    }
+    
+}

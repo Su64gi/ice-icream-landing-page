@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ice-cream</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="navbar_logo">
+                <img src="logo.png" alt="">  
+             </div>
+            
+            <!-- Navbar menu (hidden by default on small devices) -->
+            <div class="navbar-menu_wrapper">
+                
+                <div class="navbar_menu">
+                    
+                    <a href="index.html" class="active">Home</a>
+                    <a href="#menu">Menu</a>
+                    
+                </div>
+                <div class="nav_auth" id="nav_auth">
+                    <a href="#" class="sign-in">Sign In</a>
+                </div>
+            </div>
+
+            <div class="navbar-menu_small-device" onclick="showNavbar()" >
+                <i class="fa-solid fa-bars" id="toggle-btn"></i>
+            </div>
+
+            <div class="side-menu" id="sideMenu">
+                <i class="fa-solid fa-xmark" id="close-btn" onclick="closeNavbar()"></i>
+                <div class="side-menu-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="#menu">Menu</a>
+                    
+                </div>
+            </div>
+            
+           
+        </div>
+
+       
+
+
+        <div class="hero">
+            <div class="hero_content">
+                <div class="snippets">
+                    <span>Cool Ice Creams</span>
+                </div>
+                <div class="title">
+                    <span>Meet Our New
+                    <span class="ice">Flavoured</span> Ice Cream</span>
+                </div>
+                <div class="description">
+                    <span  > 🍦Scoop into Happiness!</span>
+                    <span> Indulge in the creamiest, dreamiest ice cream delights crafted to sweeten your day. From classic favorites to bold new flavors, every scoop is a journey of pure joy. Chill with us and taste the magic!</span>
+                </div>
+                <button class="order-now">Order Now</button>
+            
+            <div class="social-media">
+                <i class="fa-brands fa-facebook  fa-2xl"></i>
+                <i class="fa-brands fa-twitter  fa-2xl"></i>
+                <i class="fa-brands fa-instagram fa-2xl"></i>
+
+                
+                    
+               
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="ice-cream.jpg" alt="ice-cream">
+        </div>
+
+    </div>
+
+<!--cards-->
+
+<div class="container" >
+    <h1>Food Items</h1>
+    <div class="card-container1" id="menu">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="vanilla.jpg" alt="">
+            <div class="card-content">
+                <h3 class="card-title">Vanilla</h3>
+                
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="chocolate.jpg" alt="Burger">
+            <div class="card-content">
+                <h3 class="card-title">Chocolate</h3>
+               
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="blueberry.jpg" alt="Pasta">
+            <div class="card-content">
+                <h3 class="card-title">Blueberry</h3>
+                
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="mint-chip.jpg" alt="Sushi">
+            <div class="card-content">
+                <h3 class="card-title">Mint Chocolate chip</h3>
+                
+            </div>
+        </div>
+        <!-- Add more cards as needed -->
+
+        <!-- Card 5 -->
+        <div class="card">
+            <img src="cookies-and-cream.jpg" alt="Pizza">
+            <div class="card-content">
+                <h3 class="card-title">Cookies and Cream</h3>
+                
+            </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="card">
+            <img src="butterscotch.jpg" alt="Burger">
+            <div class="card-content">
+                <h3 class="card-title">Butterscotch</h3>
+                
+            </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="card">
+            <img src="strawberry.jpg" alt="Burger">
+            <div class="card-content">
+                <h3 class="card-title">Strawberry</h3>
+                
+            </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="card">
+            <img src="pistachio.jpg" alt="Burger">
+            <div class="card-content">
+                <h3 class="card-title">Pistachio</h3>
+                
+            </div>
+        </div>
+    </div>
+
+
+    
+</div>
+
+
+    <script>
+    const sideMenu = document.getElementById('sideMenu');
+
+    function showNavbar() {
+        sideMenu.classList.add('show'); // Slide in the menu
+    }
+
+    function closeNavbar() {
+        sideMenu.classList.remove('show'); // Slide out the menu
+    }
+</script>
+<script src="ice-cream.js"></script>
+
+</body>
+</html>
+
